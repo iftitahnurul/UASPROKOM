@@ -5,7 +5,7 @@
 
 import pandas as pd
 import json
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from matplotlib import cm
 import streamlit as st
 
