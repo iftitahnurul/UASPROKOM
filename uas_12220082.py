@@ -73,7 +73,7 @@ for i in range(len(list(df['kode_negara']))):
         tahunsoal1.append(list(df['tahun'])[i])
         produksisoal1.append(list(df['produksi'])[i])
 
-fig, ax = plt.subplots(figsize=(20,8))
+fig, ax = plt.subplots()
 plt.plot(tahunsoal1, produksisoal1)
 plt.title(Nama)
 plt.xlabel('Tahun', fontsize = 12)
@@ -93,7 +93,7 @@ dftahunbanyak = dftahun[:Berapa]
 negarasoal2 = dftahunbanyak['kode_negara']
 produksisoal2 = dftahunbanyak['produksi']
 
-fig, ax = plt.subplots(figsize=(20,8))
+fig, ax = plt.subplots()
 plt.bar(negarasoal2,produksisoal2)
 plt.show()
 right_col.pyplot(fig)
